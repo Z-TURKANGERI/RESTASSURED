@@ -1,0 +1,12 @@
+package api.endpoints;
+
+import static io.restassured.RestAssured.*;
+
+public class UserEndPoints {
+
+	public static void createUser() {
+		given()
+		.when()
+		.then();
+	}
+}

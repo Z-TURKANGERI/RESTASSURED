@@ -1,0 +1,20 @@
+package api.endpoints;
+
+import static io.restassured.RestAssured.*;
+
+import io.restassured.response.Response;
+
+public class UserEndPoints {
+
+	public static Response createUser() {
+		Response response =
+		given()
+		.contentType("application/json")
+		.accept("application/json")
+		
+		.when()
+		post(Routes.post_url);
+		
+		return response;
+	}
+}

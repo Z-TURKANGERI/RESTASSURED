@@ -1,0 +1,9 @@
+package api.test;
+
+public class UserTests {
+	
+	public void setupData() {
+		
+	}
+
+}

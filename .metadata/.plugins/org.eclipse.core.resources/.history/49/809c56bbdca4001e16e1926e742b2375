@@ -1,0 +1,30 @@
+package api.test;
+
+import org.testng.annotations.Test;
+
+import com.github.javafaker.Faker;
+
+import api.payload.User;
+
+
+
+
+public class UserTests {
+	
+	
+	Faker faker;
+	User userPayLoad;
+	
+	@Test
+	public void setupData() {
+		
+		faker = new Faker();
+		userPayLoad = new User();
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,47 @@
+package api.endpoints;
+
+import static io.restassured.RestAssured.*;
+
+import io.restassured.response.Response;
+
+public class UserEndPoints {
+
+	public static Response createUser(User payload) {
+		Response response =
+		given()
+		.contentType("application/json")
+		.accept("application/json")
+		
+		.when()
+		.post(Routes.post_url);
+		
+		return response;
+	}
+	
+	public static Response getUser(String username) {
+		Response response = 
+				given()
+				.when()
+				.get(Routes.get_url);
+		return response;
+	}
+	
+	public static Response updateUser(String username,User payload) {
+		Response response = 
+				given()
+				.contentType("application/json")
+				.accept("application/json")
+				
+				.when()
+				.put(Routes.update_url);
+	}
+	
+	public static Response getUser(String username) {
+		Response response = 
+				given()
+				.when()
+				.get(Routes.get_url);
+		return response;
+	}
+	
+}
